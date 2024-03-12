@@ -1,0 +1,13 @@
+{
+  "name": "algorithm-challenges",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "29.7.0",
+    "typescript": "5.4.2"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}
