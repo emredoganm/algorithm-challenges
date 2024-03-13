@@ -21,6 +21,11 @@ describe("Remove Zero Sum Sublists", () => {
     expect(deserialize(result)).toStrictEqual([2, 4, 32]);
   });
 
+  it("should work for list without zero sum sublist", () => {
+    const result = removeZeroSumSublists(createLinkedList([1, 2, 3, 4]));
+    expect(deserialize(result)).toStrictEqual([1, 2, 3, 4]);
+  });
+
   it("should remove full list and return null", () => {
     const result = removeZeroSumSublists(createLinkedList([1, 2, -3]));
     expect(deserialize(result)).toStrictEqual(null);
